@@ -8,6 +8,8 @@ import Marqee from '../screens/margee/Marqee';
 import InformationTech from '../screens/margee/IT/InformationTech';
 import Feedback from '../screens/feedback/Feedback';
 import PostAnalysis from '../screens/feedback/postAnalysis/PostAnalysis';
+import Events from '../screens/feedback/postAnalysis/Events';
+import Professional from '../screens/margee/IT/Professional';
 
 const Stack = createNativeStackNavigator();
 
@@ -46,6 +48,18 @@ const AppNavigator = () => {
         <Stack.Screen 
           name="Postanalysis" 
           component={PostAnalysis} 
+          options={{headerShown:false}}
+        />
+
+        <Stack.Screen 
+          name="Events" 
+          component={Events} 
+          options={{headerShown:false}}
+        />
+
+        <Stack.Screen 
+          name="Professional" 
+          component={Professional} 
           options={{headerShown:false}}
         />
       </Stack.Navigator>

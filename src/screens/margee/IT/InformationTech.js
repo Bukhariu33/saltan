@@ -4,10 +4,14 @@ import { View, Text, ScrollView, StyleSheet, Alert } from 'react-native';
 import ButtonList from '../../../component/ButtonList';
 
 
-export default function InformationTech() {
+export default function InformationTech({navigation}) {
   const levels = ["Normal", "Medium", "Professional", "Current", "Officer"];
   const handlePress = (label) => {
-    Alert.alert(`You clicked on ${label}`);
+    if (label === 'Professional') {
+      navigation.navigate('Professional');
+    } else {
+      Alert.alert(`You clicked on ${label}`);
+    }
   };
 
   return (

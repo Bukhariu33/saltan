@@ -8,6 +8,7 @@ import {
   ScrollView,
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import Header from '../../../component/Header';
 
 export default function PostAnalysis() {
   const navigation = useNavigation();
@@ -26,18 +27,13 @@ export default function PostAnalysis() {
 
   const handleAddEvent = () => {
     console.log('Form submitted:', form);
-    // Add your save logic here
+    navigation.navigate('Events')
   };
 
   return (
     <View style={styles.container}>
       {/* Header */}
-      <View style={styles.header}>
-        <TouchableOpacity onPress={() => navigation.goBack()}>
-          <Text style={styles.backArrow}>{'<'}</Text>
-        </TouchableOpacity>
-        <Text style={styles.headerText}>Post Analysis</Text>
-      </View>
+      <Header title="Post Analysis" />
 
       {/* Form */}
       <ScrollView contentContainerStyle={styles.formContainer}>
