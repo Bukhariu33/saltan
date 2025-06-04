@@ -20,7 +20,7 @@ const Marqee = ({navigation}) => {
           <Text style={styles.buttonText}>Finance</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.buttonCard}>
+        <TouchableOpacity style={styles.buttonCard} onPress={()=>navigation.navigate('Social')}>
           <Text style={styles.buttonText}>Social</Text>
         </TouchableOpacity>
 

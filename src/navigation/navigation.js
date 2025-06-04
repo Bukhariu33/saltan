@@ -10,6 +10,10 @@ import Feedback from '../screens/feedback/Feedback';
 import PostAnalysis from '../screens/feedback/postAnalysis/PostAnalysis';
 import Events from '../screens/feedback/postAnalysis/Events';
 import Professional from '../screens/margee/IT/Professional';
+import Social from '../screens/margee/Social/Social';
+import Personalities from '../screens/margee/Social/Personalities';
+import AddPerson from '../screens/margee/Social/AddPersons';
+import PersonDetails from '../screens/margee/Social/PersonDetails';
 
 const Stack = createNativeStackNavigator();
 
@@ -60,6 +64,28 @@ const AppNavigator = () => {
         <Stack.Screen 
           name="Professional" 
           component={Professional} 
+          options={{headerShown:false}}
+        />
+
+        <Stack.Screen 
+          name="Social" 
+          component={Social} 
+          options={{headerShown:false}}
+        />
+
+        <Stack.Screen 
+          name="Persons" 
+          component={Personalities} 
+          options={{headerShown:false}}
+        />
+        <Stack.Screen 
+          name="AddPerson" 
+          component={AddPerson} 
+          options={{headerShown:false}}
+        />
+        <Stack.Screen 
+          name="PersonDetail" 
+          component={PersonDetails} 
           options={{headerShown:false}}
         />
       </Stack.Navigator>
