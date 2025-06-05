@@ -7,15 +7,15 @@ import {
   ScrollView,
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import Header from '../../../component/Header';
+import Header from '../../../../component/Header';
 import Icon from 'react-native-vector-icons/AntDesign';
-import AddInfoModal from '../../../component/AddInfoModal';
-import ExplanationModal from '../../../component/ExplanationModal';
-import AddTitleModal from '../../../component/EditTitle';
+import AddInfoModal from '../../../../component/AddInfoModal';
+import ExplanationModal from '../../../../component/ExplanationModal';
+import AddTitleModal from '../../../../component/EditTitle';
 
-const STORAGE_KEY = '@professional_titles';
+const STORAGE_KEY = '@Afrahim_titles';
 
-export default function Professional() {
+export default function Afrahim() {
   const [titles, setTitles] = useState([]);
   const [modalVisible, setModalVisible] = useState(false);
   const [addModalVisible, setAddModalVisible] = useState(false);
@@ -78,7 +78,7 @@ export default function Professional() {
 
   return (
     <View style={styles.container}>
-      <Header title="Professional" />
+      <Header title="Afrahim" />
       <ScrollView contentContainerStyle={styles.content}>
         {titles.length === 0 ? (
           <View style={styles.emptyState}>

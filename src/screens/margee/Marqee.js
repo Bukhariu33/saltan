@@ -16,7 +16,7 @@ const Marqee = ({navigation}) => {
           <Text style={styles.buttonText}>IT</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.buttonCard}>
+        <TouchableOpacity style={styles.buttonCard} onPress={()=>navigation.navigate('Finance')}>
           <Text style={styles.buttonText}>Finance</Text>
         </TouchableOpacity>
 

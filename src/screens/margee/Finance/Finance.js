@@ -13,7 +13,7 @@ import AddInfoModal from '../../../component/AddInfoModal';
 import ExplanationModal from '../../../component/ExplanationModal';
 import AddTitleModal from '../../../component/EditTitle';
 
-const STORAGE_KEY = '@professional_titles';
+const STORAGE_KEY = '@finance_titles';
 
 export default function Professional() {
   const [titles, setTitles] = useState([]);
@@ -78,7 +78,7 @@ export default function Professional() {
 
   return (
     <View style={styles.container}>
-      <Header title="Professional" />
+      <Header title="Finance" />
       <ScrollView contentContainerStyle={styles.content}>
         {titles.length === 0 ? (
           <View style={styles.emptyState}>

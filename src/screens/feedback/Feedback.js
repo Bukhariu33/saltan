@@ -16,7 +16,7 @@ const Feedback = ({navigation}) => {
           <Text style={styles.buttonText}>Post Analysis</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.buttonCard} onPress={() => navigation.navigate('Marqee')}>
+        <TouchableOpacity style={styles.buttonCard} onPress={() => navigation.navigate('Expectations')}>
           <Text style={styles.buttonText}>Expectation From</Text>
         </TouchableOpacity>
       </View>

@@ -14,6 +14,10 @@ import Social from '../screens/margee/Social/Social';
 import Personalities from '../screens/margee/Social/Personalities';
 import AddPerson from '../screens/margee/Social/AddPersons';
 import PersonDetails from '../screens/margee/Social/PersonDetails';
+import Officer from '../screens/margee/IT/Officer';
+import Afrahim from '../screens/margee/IT/Officers/Afrahim';
+import Finance from '../screens/margee/Finance/Finance';
+import Expectations from '../screens/feedback/Expectations';
 
 const Stack = createNativeStackNavigator();
 
@@ -86,6 +90,30 @@ const AppNavigator = () => {
         <Stack.Screen 
           name="PersonDetail" 
           component={PersonDetails} 
+          options={{headerShown:false}}
+        />
+
+        <Stack.Screen 
+          name="Officers" 
+          component={Officer} 
+          options={{headerShown:false}}
+        />
+
+        <Stack.Screen 
+          name="Afrahim" 
+          component={Afrahim} 
+          options={{headerShown:false}}
+        />
+
+        <Stack.Screen 
+          name="Finance" 
+          component={Finance} 
+          options={{headerShown:false}}
+        />
+
+        <Stack.Screen 
+          name="Expectations" 
+          component={Expectations} 
           options={{headerShown:false}}
         />
       </Stack.Navigator>
