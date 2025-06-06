@@ -12,7 +12,7 @@ const Feedback = ({navigation}) => {
 
       {/* Grid Buttons */}
       <View style={styles.gridContainer}>
-        <TouchableOpacity style={styles.buttonCard} onPress={() => navigation.navigate('Postanalysis')}>
+        <TouchableOpacity style={styles.buttonCard} onPress={() => navigation.navigate('Events')}>
           <Text style={styles.buttonText}>Post Analysis</Text>
         </TouchableOpacity>
 
